@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cc3737;
+        stroke: #fc0202;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_4" data-name="Rounded Rectangle 4" class="cls-1" x="34" y="34" width="534" height="70" rx="35" ry="35"/>
+</svg>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <!DOCTYPE html>
+<htmL>
+    
+<head>
+    <meta charset="utf-8">
+    <title>The Krusty Krab</title>
+    <link rel="stylesheet" href="styles.css"/> 
+    <!-- Added a favicon.ico -->
+    <link rel="shortcut icon" type="image/x-icon" href="/1591166131.ico">
+    <style>
+        #controls {
+            text-align: center;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        #controls a {
+            font-family: sans-serif;
+            border: 1px solid black;
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #controls a:hover {
+            background-color: yellow;
+        }
+
+        #face {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-image: url(botbun.svg);
+            background-size: contain;
+            position: relative;
+        }
+
+        #bottombun {
+            position: absolute;
+            width: 50px;
+        }
+        
+        
+        #hollow_right, #hollow_left {
+            position: absolute;
+            width: 50px;
+            visibility: hidden;
+            
+        }
+        
+        
+        #happy_mouth {
+            position: absolute;
+            width: 200px;
+        }
+        
+        #sad_mouth {
+            position: absolute;
+            width: 200px;
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+    
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="col-lg-12 logo">
+                <img src="img/logofornav.jpg"/>
+            </div>
+        </div>
+        <div class= "navbar">
+            <div class="links">
+                <a href="index.html">|HOME |</a> &bull;
+                <a href="about.html">|ABOUT|</a> &bull;
+                <a href="menu.html">|MENU|</a>  &bull;
+                <a href="order.html">|ORDER|</a> &bull;
+                <a href="merch.html">|MERCH|</a> &bull;
+                <a href="contact.html">|CONTACT|</a> 
+            </div>
+        </div>
+    </div>
+    <div id="controls">
+        <a id="botbun_down_btn">bottom bun up</a>
+        <a id="botbun_up_btn">bottom bun down</a>
+        <a id="eyes_together_btn"> bottom bun left</a>
+        <a id="eyes_apart_btn">bottom bun right</a>
+        <a id="eyes_hollow_btn">top bun up</a>
+        <a id="eyes_solid_btn">top bun down</a>
+        <a id="eyes_noright_btn">top bun left</a>
+        <a id="mouth_up_btn">top bun right</a>
+        <a id="happy_mouth_btn">move lettuce up</a>
+        <a id="sad_mouth_btn">move lettuce down</a>
+        <a id="face_reset_btn">lettuce left </a>
+        <a id="mouth_down_btn">lettuce right</a>
+    </div>
+
+    <div id="face">
+        <img id="bottombun" src="botofbun.svg" />
+
+    </div>
+    
+    <script>
+        var bottombun_x = 100;
+        var bottombun_y = 100;
+        
+        document.getElementById('bottombun').style.left = bottombun_x + 'px';
+        document.getElementById('bottombun').style.top = Booleany + 'px';
+        
+        document.getElementById('botbun_down_btn').addEventListener('click', function() {
+            bottombun_x -= 10;
+            document.getElementById('bottombun').style.top = bottombun_x + 'px';
+            
+        });
+    
+    </script>
+    
+    
+        
+    
+</body>
+</htmL>
