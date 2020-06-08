@@ -11,8 +11,8 @@ body {
     max-width: 100%;
     height: 100px;
     background-color: #b7e2f7;
-    text-align: center; 
-    overflow:hidden;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -21,23 +21,26 @@ body {
     overflow:hidden;
     background-color: #b7e2f7;
     opacity: 70%;
-    text-align: center;
-    color: #f5b342;
+    align-content: center;
+    margin: auto;
 }
 
 
 .navbar a:hover{
-    text-decoration:underline;
+    text-decoration:underline ;
 }
 
-img {
+
+.logo img {
     max-width: 500px;
+    margin: auto;
 }
 
 .links {
     margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
+    margin: auto;
     color: #4B4E61;
     font-family: 'Gochi Hand', cursive;
 }
@@ -50,30 +53,125 @@ img {
 }
 
 
-.container{
-    max-width:100%;
-    height: 400px;
-    margin:auto;
-    background-color: #b7e2f7; 
+
+
+/*Home Bootstrap */
+.info {
+    height: 300px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.blue {
+    background-color: #b7e2f7 ;
+    font-size: 1.3em;
     opacity: 70%;
-    
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    color: maroon; 
 }
 
-#info {
-    max-width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.crew img {
+    max-width: 600px;
+    margin: auto;
 }
 
-#about{
-    display:grid;
+.crew {
+    margin: auto;
+    text-align: center;
+}
+
+.map {
+    background-image: url(img/bikinimap.jpg);
+    height: 500px;
+    opacity: 50%;
+    text-align: center;
+    background-position: center;
+}
+
+.adress {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 4.0rem;
+    font-family: 'Gochi Hand', cursive;
+    color: maroon;
+}
+ 
+.container {
+    background-color: #b7e2f7 ;
+    height: 100%;
     max-width: 100%;
-    grid-column:1/2;
-    height: auto;
+    opacity:70%;
+    text-align: center;
+    font-size: 1.5rem
 }
-    
-    
-    
+
+.container p {
+    margin-right: 500px;
+    margin-left: 500px
+}
+
+
+
+.text{
+    text-align: center;
+    margin: auto;
+}
+ /*sm devices */ 
+@media (min-width: 400px) {
+    .info {max-width: 100px;}
+    .info {max-height: 200px;}
+    .crew  {max-width: 150px;}
+    .crew  {max-height:  150px;}
+    .container {max-height: 100%;}
+    .container p {margin-right: 10px;}
+    .container p {margin-left: 10px;}
+}
+
+ 
+/* md devices */
+@media (min-width: 992px) {
+    .info {max-width:200px;}
+    .info {max-height: 200px;}
+    .crew {max-width: 300px;}
+    .crew  {max-height: 300px;}
+    .container {max-height: 100%;}
+    .container p {margin-right: 300px;}
+    .container p {margin-left: 300px;}
+}
+            
+/* lg device */
+@media (min-width: 1200px) {
+    .infoimg {max-width: 300px;}
+    .infoimg {max-height: 300px;}
+    .crew {max-width: 400px; }
+    .crew {max-height: 400px;}
+    .container {max-height: 100%;}
+    .container p {margin-right: 500px;}
+    .container p {margin-left: 500px;}
+
+}
+
+/* xl device */
+            
+ @media (min-width: 1500px){
+     .info {max-width: 300px;}
+     .info {max-width: 300px;}
+     .crew {max-width: 550px; }
+     .crew {max-height: 550px;}
+     .container {max-height: 100%;}
+     .container p {margin-right: 400px;}
+     .container p {margin-left: 400px;}
+     
+ }
+
+
+
+
+
+
+
+
+
