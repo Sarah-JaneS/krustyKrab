@@ -1,22 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="686.219" height="131.593" viewBox="0 0 686.219 131.593">
   <defs>
     <style>
       .cls-1 {
         fill: #cc3737;
-        stroke: #fc0202;
-        stroke-width: 1px;
-        fill-rule: evenodd;
         filter: url(#filter);
       }
     </style>
-    <filter id="filter" x="25.875" y="18.719" width="686.219" height="131.593" filterUnits="userSpaceOnUse">
+    <filter id="filter" x="0" y="0" width="686.219" height="131.593" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#77281b"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <g style="fill: #cc3737; filter: url(#filter)">
-    <path id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-1" d="M56.375,18.719H681.587a30.5,30.5,0,0,1,30.5,30.5v70.6a30.5,30.5,0,0,1-30.5,30.5H56.375a30.5,30.5,0,0,1-30.5-30.5v-70.6A30.5,30.5,0,0,1,56.375,18.719Z" style="stroke: inherit; filter: none; fill: inherit"/>
-  </g>
-  <use xlink:href="#Rounded_Rectangle_2" style="stroke: #fc0202; filter: none; fill: none"/>
+  <rect id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-1" width="686.219" height="131.593" rx="30.5" ry="30.5"/>
 </svg>

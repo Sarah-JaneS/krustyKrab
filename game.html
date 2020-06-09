@@ -9,21 +9,44 @@
     <!-- Added a favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="/1591166131.ico">
     <style>
-        #controls {
+        #controls, #controls2, #controls3, #controls4, #controls5, #controls6 {
             text-align: center;
-            width: 600px;
+            width: 500px;
             margin: auto;
-            margin-bottom: 10px;
+            
         }
 
-        #controls a {
+        #controls a, #controls2 a, #controls3 a, #controls4 a, #controls5 a, #controls6 a {
             font-family: sans-serif;
             border: 1px solid black;
             display: inline-block;
             cursor: pointer;
             padding: 5px;
-            margin: 5px;
+            margin: 2px;
+            background-color: burlywood;
         }
+        
+        #controls2 a {
+            background-color: burlywood;
+        }
+        
+        #controls3 a {
+            background-color: lightgreen;
+        }
+        
+        #controls4 a {
+            background-color: lightcoral;
+        }
+        
+        #controls5 a {
+            background-color: lightyellow;
+        }
+        
+        #controls6 a {
+            background-color: pink;
+        }
+        
+        
 
         #controls a:hover {
             background-color: yellow;
@@ -38,29 +61,34 @@
             position: relative;
         }
 
-        #bottombun {
+        #bottombun, #topbun {
             position: absolute;
-            width: 50px;
+            width: 300px;
         }
         
         
-        #hollow_right, #hollow_left {
+        #lettuce {
             position: absolute;
-            width: 50px;
-            visibility: hidden;
+            width: 300px;
+ 
             
         }
         
-        
-        #happy_mouth {
+        #patty {
             position: absolute;
-            width: 200px;
+            width: 300px;
+ 
+            
         }
         
-        #sad_mouth {
+        #cheese {
+            position: absolute;
+            width: 300px;
+        }
+        
+        #tomato{
             position: absolute;
             width: 200px;
-            visibility: hidden;
         }
         
     </style>
@@ -84,39 +112,205 @@
             </div>
         </div>
     </div>
-    <div id="controls">
-        <a id="botbun_down_btn">bottom bun up</a>
-        <a id="botbun_up_btn">bottom bun down</a>
-        <a id="eyes_together_btn"> bottom bun left</a>
-        <a id="eyes_apart_btn">bottom bun right</a>
-        <a id="eyes_hollow_btn">top bun up</a>
-        <a id="eyes_solid_btn">top bun down</a>
-        <a id="eyes_noright_btn">top bun left</a>
-        <a id="mouth_up_btn">top bun right</a>
-        <a id="happy_mouth_btn">move lettuce up</a>
-        <a id="sad_mouth_btn">move lettuce down</a>
-        <a id="face_reset_btn">lettuce left </a>
-        <a id="mouth_down_btn">lettuce right</a>
+
+    <div id="controls2">
+        <a id="topbun_up_btn">top bun up</a>
+        <a id="topbun_down_btn">top bun down</a>
+        <a id="topbun_left_btn">top bun left</a>
+        <a id="topbun_right_btn">top bun right</a>
+    </div>
+    <div id="controls3">
+        <a id="lettuce_up_btn">lettuce up</a>
+        <a id="lettuce_down_btn">lettuce down</a>
+        <a id="lettuce_left_btn">lettuce left </a>
+        <a id="lettuce_right_btn">lettuce right</a>
+    </div>
+    <div id="controls4">
+        <a id="patty_up_btn">patty up</a>
+        <a id="patty_down_btn">patty down</a>
+        <a id="patty_left_btn">patty left </a>
+        <a id="patty_right_btn">patty right</a>
+    </div>
+    <div id="controls5">
+        <a id="cheese_up_btn">cheese up</a>
+        <a id="cheese_down_btn">cheese down</a>
+        <a id="cheese_left_btn">cheese left </a>
+        <a id="cheese_right_btn">cheese right</a>
+    </div>
+    <div id="controls6">
+        <a id="tomato_up_btn">tomato up</a>
+        <a id="tomato_down_btn">tomato down</a>
+        <a id="tomato_left_btn">tomato left </a>
+        <a id="tomato_right_btn">tomato right</a>
     </div>
 
+    <div id="controls">
+        <a id="botbun_up_btn">bottom bun up</a>
+        <a id="botbun_down_btn">bottom bun down</a>
+        <a id="botbun_left_btn"> bottom bun left</a>
+        <a id="botbun_right_btn">bottom bun right</a>
+    </div>
+    
     <div id="face">
-        <img id="bottombun" src="botofbun.svg" />
-
+        <img id="bottombun" src="bottombun.png" />
+        <img id="topbun" src="topbun.png" />
+        <img id="lettuce" src="lettuce.png"/>
+        <img id="patty" src= "patty.png"/>
+        <img id= "cheese" src= "cheese.png"/>
+        <img id="tomato" src="tomato.png"/>
+        
     </div>
     
     <script>
-        var bottombun_x = 100;
-        var bottombun_y = 100;
+        var bottombun_x = 50;
+        var bottombun_y = 400;
+        var topbun_x = 45;
+        var topbun_y = 190;
+        var lettuce_y = 280;
+        var lettuce_x = 50;
+        var patty_x = 50;
+        var patty_y = 350;
+        var cheese_x= 50;
+        var cheese_y= 320;
+        var tomato_x= 50;
+        var tomato_y= 270;
+        var tomato_x= 100;
         
         document.getElementById('bottombun').style.left = bottombun_x + 'px';
-        document.getElementById('bottombun').style.top = Booleany + 'px';
+        document.getElementById('bottombun').style.top = bottombun_y + 'px';
+        document.getElementById('topbun').style.left = topbun_x + 'px';
+        document.getElementById('topbun').style.top = topbun_y + 'px';
+        document.getElementById('lettuce').style.left = lettuce_x + 'px';
+        document.getElementById('lettuce').style.top = lettuce_y + 'px';
+        document.getElementById('patty').style.left = patty_x + 'px';
+        document.getElementById('patty').style.top = patty_y + 'px';
+        document.getElementById('cheese').style.left = cheese_x + 'px';
+        document.getElementById('cheese').style.top = cheese_y + 'px';
         
-        document.getElementById('botbun_down_btn').addEventListener('click', function() {
+        document.getElementById('tomato').style.left = tomato_x + 'px';
+        document.getElementById('tomato').style.top = tomato_y + 'px';
+        
+        
+       /**BOTTOM BUN **/ document.getElementById('botbun_up_btn').addEventListener('click', function() {
+            bottombun_y -= 10;
+            document.getElementById('bottombun').style.top = bottombun_y + 'px';
+            
+        }); document.getElementById('botbun_down_btn').addEventListener('click', function() {
+            bottombun_y += 10;
+            document.getElementById('bottombun').style.top = bottombun_y + 'px';
+            
+        });
+         document.getElementById('botbun_left_btn').addEventListener('click', function() {
             bottombun_x -= 10;
-            document.getElementById('bottombun').style.top = bottombun_x + 'px';
+            document.getElementById('bottombun').style.left = bottombun_x + 'px';
+            
+        });
+         document.getElementById('botbun_right_btn').addEventListener('click', function() {
+            bottombun_x += 10;
+            document.getElementById('bottombun').style.left = bottombun_x + 'px';
             
         });
     
+        /** TOP BUN **/
+        document.getElementById('topbun_up_btn').addEventListener('click', function() {
+            topbun_y -= 10;
+            document.getElementById('topbun').style.top = topbun_y + 'px';
+            
+        }); document.getElementById('topbun_down_btn').addEventListener('click', function() {
+            topbun_y += 10;
+            document.getElementById('topbun').style.top = topbun_y + 'px';
+            
+        });
+         document.getElementById('topbun_left_btn').addEventListener('click', function() {
+            topbun_x -= 10;
+            document.getElementById('topbun').style.left = topbun_x + 'px';
+            
+        });
+         document.getElementById('topbun_right_btn').addEventListener('click', function() {
+            topbun_x += 10;
+            document.getElementById('topbun').style.left = topbun_x + 'px';
+            
+        });  
+        
+        /** LETTUCE **/
+         document.getElementById('lettuce_up_btn').addEventListener('click', function() {
+            lettuce_y -= 10;
+            document.getElementById('lettuce').style.top = lettuce_y + 'px';
+            
+        }); document.getElementById('lettuce_down_btn').addEventListener('click', function() {
+            lettuce_y += 10;
+            document.getElementById('lettuce').style.top = lettuce_y + 'px';
+            
+        });
+         document.getElementById('lettuce_left_btn').addEventListener('click', function() {
+            lettuce_x -= 10;
+            document.getElementById('lettuce').style.left = lettuce_x + 'px';
+            
+        });
+         document.getElementById('lettuce_right_btn').addEventListener('click', function() {
+            lettuce_x += 10;
+            document.getElementById('lettuce').style.left = lettuce_x + 'px';   
+        });
+        
+       /** PATTY **/ document.getElementById('patty_up_btn').addEventListener('click', function() {
+            patty_y -= 10;
+            document.getElementById('patty').style.top = patty_y + 'px';
+            
+        }); document.getElementById('patty_down_btn').addEventListener('click', function() {
+            patty_y += 10;
+            document.getElementById('patty').style.top = patty_y + 'px';
+            
+        });
+         document.getElementById('patty_left_btn').addEventListener('click', function() {
+            patty_x -= 10;
+            document.getElementById('patty').style.left = patty_x + 'px';
+            
+        });
+         document.getElementById('patty_right_btn').addEventListener('click', function() {
+            patty_x += 10;
+            document.getElementById('patty').style.left = patty_x + 'px';   
+        });
+        
+       /** CHEESE **/ 
+        document.getElementById('cheese_up_btn').addEventListener('click', function() {
+            cheese_y -= 10;
+            document.getElementById('cheese').style.top = cheese_y + 'px';
+            
+        }); document.getElementById('cheese_down_btn').addEventListener('click', function() {
+            cheese_y += 10;
+            document.getElementById('cheese').style.top = cheese_y + 'px';
+            
+        });
+         document.getElementById('cheese_left_btn').addEventListener('click', function() {
+            cheese_x -= 10;
+            document.getElementById('cheese').style.left = cheese_x + 'px';
+            
+        });
+         document.getElementById('cheese_right_btn').addEventListener('click', function() {
+            cheese_x += 10;
+            document.getElementById('cheese').style.left = cheese_x + 'px';   
+        });
+        
+     /** TOMATO **/ 
+        document.getElementById('tomato_up_btn').addEventListener('click', function() {
+            tomato_y -= 10;
+            document.getElementById('tomato').style.top = tomato_y + 'px';
+            
+        }); document.getElementById('tomato_down_btn').addEventListener('click', function() {
+            tomato_y += 10;
+            document.getElementById('tomato').style.top = tomato_y + 'px';
+            
+        });
+         document.getElementById('tomato_left_btn').addEventListener('click', function() {
+            tomato_x -= 10;
+            document.getElementById('tomato').style.left = tomato_x + 'px';
+            
+        });
+         document.getElementById('tomato_right_btn').addEventListener('click', function() {
+            tomato_x += 10;
+            document.getElementById('tomato').style.left = tomato_x + 'px';   
+        });
+        
     </script>
     
     

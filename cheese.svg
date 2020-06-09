@@ -1,31 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" width="723.718" height="60.781" viewBox="0 0 723.718 60.781">
   <defs>
     <style>
       .cls-1 {
         fill: #f3e250;
       }
-
-      .cls-1, .cls-2 {
-        stroke: #fc0202;
-        stroke-width: 1px;
-        fill-rule: evenodd;
-      }
-
-      .cls-2 {
-        fill: #cc3737;
-        filter: url(#filter);
-      }
     </style>
-    <filter id="filter" x="705.656" y="50.25" width="78.094" height="75.094" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#f3e250"/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
   </defs>
-  <path class="cls-1" d="M35.813,48H759.539v60.786H35.813V48Z"/>
-  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M110.522,104.926L24.245,136.073,40.41,45.781Z"/>
-  <g style="fill: #cc3737; filter: url(#filter)">
-    <path id="Polygon_2" data-name="Polygon 2" class="cls-2" d="M783.743,125.347l-78.079-14.969,52-60.134Z" style="stroke: inherit; filter: none; fill: inherit"/>
-  </g>
-  <use xlink:href="#Polygon_2" style="stroke: #fc0202; filter: none; fill: none"/>
+  <rect class="cls-1" width="723.718" height="60.781"/>
 </svg>
