@@ -55,13 +55,23 @@ body {
 
 
 
-/*Home Bootstrap */
+/*Bootstrap */
 .info {
-    height: 300px;
-    max-width: 300px;
-    margin: auto;
-    margin-top: 10px;
+    max-height:200px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
 }
+
+.infoimg{
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
 
 
 .blue {
@@ -121,8 +131,10 @@ body {
 }
  /*sm devices */ 
 @media (min-width: 400px) {
-    .info {max-width: 100px;}
+    .info {max-width: 200px;}
     .info {max-height: 200px;}
+    .infoimg {max-width: 200px;}
+    .infoimg {max-width: 200px;}
     .crew  {max-width: 150px;}
     .crew  {max-height:  150px;}
     .container {max-height: 100%;}
@@ -133,8 +145,8 @@ body {
  
 /* md devices */
 @media (min-width: 992px) {
-    .info {max-width:200px;}
-    .info {max-height: 200px;}
+    .info {max-width:300px;}
+    .info {max-height: 300px;}
     .crew {max-width: 300px;}
     .crew  {max-height: 300px;}
     .container {max-height: 100%;}
@@ -144,6 +156,8 @@ body {
             
 /* lg device */
 @media (min-width: 1200px) {
+    .info {max-width: 300px}
+    .info {max-height: inherit}
     .infoimg {max-width: 300px;}
     .infoimg {max-height: 300px;}
     .crew {max-width: 400px; }
@@ -159,6 +173,8 @@ body {
  @media (min-width: 1500px){
      .info {max-width: 300px;}
      .info {max-width: 300px;}
+    .infoimg {max-width: 270px;}
+     .infoimg {max-width: 270px;}
      .crew {max-width: 550px; }
      .crew {max-height: 550px;}
      .container {max-height: 100%;}
@@ -168,26 +184,16 @@ body {
  }
 
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+#gallery img{
+    max-width: 190px;
+    padding-top: 10px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+#gallery {
+    margin: auto;
+    text-align: center;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
 
 
