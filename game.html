@@ -9,14 +9,14 @@
     <!-- Added a favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="/1591166131.ico">
     <style>
-        #controls, #controls2, #controls3, #controls4, #controls5, #controls6 {
+        #controls, #controls2, #controls3, #controls4, #controls5, #controls6, #reset{
             text-align: center;
             width: 500px;
             margin: auto;
             
         }
 
-        #controls a, #controls2 a, #controls3 a, #controls4 a, #controls5 a, #controls6 a {
+        #controls a, #controls2 a, #controls3 a, #controls4 a, #controls5 a, #controls6 a, #reset a {
             font-family: sans-serif;
             border: 1px solid black;
             display: inline-block;
@@ -46,13 +46,20 @@
             background-color: pink;
         }
         
-        
-
-        #controls a:hover {
+        #reset a {
             background-color: yellow;
         }
+        
 
-        #face {
+        #controls a:hover, #controls2 a:hover, #controls3 a:hover, #controls4 a:hover, #controls5 a:hover, #controls6 a:hover {
+            background-color: yellow;
+        }
+        
+        #reset a:hover {
+            background-color: greenyellow
+        }
+
+        #burger {
             width: 400px;
             height: 400px;
             margin: auto;
@@ -150,8 +157,11 @@
         <a id="botbun_left_btn"> bottom bun left</a>
         <a id="botbun_right_btn">bottom bun right</a>
     </div>
-    
-    <div id="face">
+    <div id="reset">
+        <a id="reset_btn">reset burger</a>
+    </div>
+    <!-- COULDNT DO SVG FILES, DID PNG INSTEAD -->
+    <div id="burger">
         <img id="bottombun" src="bottombun.png" />
         <img id="topbun" src="topbun.png" />
         <img id="lettuce" src="lettuce.png"/>
@@ -176,7 +186,7 @@
         var tomato_y= 270;
         var tomato_x= 100;
         
-        document.getElementById('bottombun').style.left = bottombun_x + 'px';
+       /** SETS POSITIONS **/ document.getElementById('bottombun').style.left = bottombun_x + 'px';
         document.getElementById('bottombun').style.top = bottombun_y + 'px';
         document.getElementById('topbun').style.left = topbun_x + 'px';
         document.getElementById('topbun').style.top = topbun_y + 'px';
@@ -311,6 +321,10 @@
             document.getElementById('tomato').style.left = tomato_x + 'px';   
         });
         
+        /**RESET BURGER **/
+        document.getElementById('reset_btn').addEventListener('click', function(){
+            window.location.reload()  
+        });
     </script>
     
     
