@@ -6,8 +6,17 @@
     <meta charset="utf-8">
     <title>The Krusty Krab</title>
     <link rel="stylesheet" href="styles.css"/> 
+            <!-- add the following 4 lines for Bootstrap -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    
     <!-- Added a favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="/1591166131.ico">
+    
+    
+    <!-- Internal style sheet -->
     <style>
         #controls, #controls2, #controls3, #controls4, #controls5, #controls6, #reset{
             text-align: center;
@@ -102,6 +111,7 @@
 </head>
     
 <body>
+    <!-- Navigation -->
     <div class="header">
         <div class="nav">
             <div class="col-lg-12 logo">
@@ -110,11 +120,12 @@
         </div>
         <div class= "navbar">
             <div class="links">
-                <a href="index.html">|HOME |</a> &bull;
+                <a href="index.html">|HOME|</a> &bull;
                 <a href="about.html">|ABOUT|</a> &bull;
                 <a href="menu.html">|MENU|</a>  &bull;
                 <a href="order.html">|ORDER|</a> &bull;
                 <a href="merch.html">|MERCH|</a> &bull;
+                <a>|PLAY|</a> &bull;
                 <a href="contact.html">|CONTACT|</a> 
             </div>
         </div>
@@ -173,7 +184,7 @@
         <img id="tomato" src="tomato.png"/>
         
     </div>
-    
+    <!-- Script for game -->
     <script>
         var bottombun_x = 50;
         var bottombun_y = 400;
@@ -189,7 +200,8 @@
         var tomato_y= 270;
         var tomato_x= 100;
         
-       /** SETS POSITIONS **/ document.getElementById('bottombun').style.left = bottombun_x + 'px';
+       /** SETS POSITIONS **/
+        document.getElementById('bottombun').style.left = bottombun_x + 'px';
         document.getElementById('bottombun').style.top = bottombun_y + 'px';
         document.getElementById('topbun').style.left = topbun_x + 'px';
         document.getElementById('topbun').style.top = topbun_y + 'px';
@@ -328,10 +340,6 @@
         document.getElementById('reset_btn').addEventListener('click', function(){
             window.location.reload()  
         });
-    </script>
-    
-    
-        
-    
+    </script> 
 </body>
 </htmL>

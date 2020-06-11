@@ -4,17 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>The Krusty Krab</title>
+    <!-- Connects to styles.css -->
     <link rel="stylesheet" href="styles.css"/> 
+    
     <!-- Added a favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="/1591166131.ico">
-        <!-- add the following 4 lines for Bootstrap -->
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="css/bootstrap.min.css" />
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-</head>
     
+    <!-- add the following 4 lines for Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+</head>
 <body>
+    <!-- Navigation -->
     <div class="header">
         <div class="nav">
             <div class="col-lg-12 logo">
@@ -23,139 +29,162 @@
         </div>
         <div class= "navbar">
             <div class="links">
-                <a href="index.html">|HOME |</a> &bull;
-                <a href="about.html">|ABOUT |</a> &bull;
+                <a href="index.html">|HOME|</a> &bull;
+                <a href="about.html">|ABOUT|</a> &bull;
                 <a href="menu.html">|MENU|</a>  &bull;
                 <a href="order.html">|ORDER|</a> &bull;
                 <a href="merch.html">|MERCH|</a> &bull;
-                <a href="game.html">|PLAY|</a> 
+                <a href="game.html">|PLAY|</a> &bull;
+                <a>|CONTACT|</a> 
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 blue">
-                <h1>Contact</h1>
+                <h1>CONTACT</h1>
             </div> 
             <div class= "col-lg-12 container">
                 <b> Phone</b>
                 <p> (707) 663-4279 </p>
                 <p> Feel free to contact us, we are open from 8am-11pm Monday-Sunday. Or leave a message and we will get back to you asap.Our phone lines are always open and we welcome you to call up to order. </p>
+                
                 <b> Location </b>
                 <p>Counch Street Bikini Bottom</p>
+                
                 <b> Head office</b>
-                <p>
-                    231 W Olive Ave
-                    <br>
-                    Burbank
-                    <br>
-                    CA 91502
+                <p>231 W Olive Ave
+                <br>
+                Burbank
+                <br>
+                CA 91502
                 </p>
+                
                 <b> General Email </b>
                 <p> nickelodeon.feedback@nickaus.com.au </p>
+                
                 <b> Book Online </b>
                 <p> For online bookings, phone or use the booking form bellow. Maximum of 4 per table. Please email if you have any concerns with your bookings and notify us 24 hours before if you wish to cancel your booking.</p>
             </div>
         </div>
         <div class="row blue">
             <div class="col-lg-12 blue">
-                <h1>Book a table</h1>
+                <h1>BOOK</h1>
             </div>    
         </div>
         <!-- Changed form from https://www.w3schools.com/howto/howto_css_contact_form.asp -->
         <div class= "row">
             <div class="col-sm-6 container">
-            <form action="action_page.php">
+                <!-- This is a prototype doesn't send to php -->
+                <form action="action_page.php">
                 
-                <!-- Booking date -->
+                    <!-- Booking date -->
                 
-                <label for="fname">Booking date</label>
-                <input type="date" id="date" name="date" placeholder="dd/mm/yyyy">
+                    <label for="booking">Booking date</label>
+                    <input type="date" id="date" name="date" placeholder="dd/mm/yyyy">
                 
-                <!--Booking time -->
+                    <!--Booking time -->
                 
-                <label for="booktime">Booking time </label>
-                <input type="time" id="booktime" name="booktime" placeholder="Enter Time...">
+                    <label for="booktime">Booking time </label>
+                    <input type="time" id="booktime" name="booktime" placeholder="Enter Time...">
                 
-                <!-- Number of guest -->
+                    <!-- Number of guest -->
                 
-                <label for="">Number of total guests (4 per table)</label>
-                <select id="guests" name="guests">
-                    <option value="onefish">1 Fish</option>
-                    <option value="twofish">2 Fish</option>
-                    <option value="threefish">3 fish</option>
-                    <option value="fourfish">4 Fish</option>
-                    <option value="fivefish">5 Fish</option>
-                    <option value="sixfish">6 fish</option>
-                    <option value="sevenfish">7 Fish</option>
-                    <option value="eightfish">8 Fish</option>
-                    <option value="ninefish">9 fish</option>
-                    <option value="10fish">10 Fish</option>
-                    <option value="elevenfish">11 Fish</option>
-                    <option value="twelvefish">12 fish</option>
-                    <option value="table">Book 5 tables </option>
-                    <option value="tentable">Book 10 tables </option>
-                    <option value="rent">Book resturant (max 100fish)</option>  
-                </select>
+                    <label for="guests">Number of total guests (4 per table)</label>
+                    <select id="guests" name="guests">
+                        <option value="onefish">1 Fish</option>
+                        <option value="twofish">2 Fish</option>
+                        <option value="threefish">3 fish</option>
+                        <option value="fourfish">4 Fish</option>
+                        <option value="fivefish">5 Fish</option>
+                        <option value="sixfish">6 fish</option>
+                        <option value="sevenfish">7 Fish</option>
+                        <option value="eightfish">8 Fish</option>
+                        <option value="ninefish">9 fish</option>
+                        <option value="10fish">10 Fish</option>
+                        <option value="elevenfish">11 Fish</option>
+                        <option value="twelvefish">12 fish</option>
+                        <option value="table">Book 5 tables </option>
+                        <option value="tentable">Book 10 tables </option>
+                        <option value="rent">Book resturant (max 100fish)</option>  
+                    </select>
                 
-                <!-- Phone number -->
+                    <!-- Phone number -->
                 
-                <label for="number">Phone number</label>
-                <input type="tel" id="number" name="phonenumber" placeholder="Enter Phone Number">
+                    <label for="number">Phone number</label>
+                    <input type="tel" id="number" name="phonenumber" placeholder="Enter Phone Number">
                 
-                <!-- Email -->
+                    <!-- Email -->
                 
-                <label for="email">Your Email</label>
-                <input type="email" id="email"  name="email" placeholder="Enter Email">
-                <input type="submit" value="Submit">
-
-            </form>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email"  name="email" placeholder="Enter Email">
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-        
-    </div>
-    <div class="row blue">
-        <div class="col-lg-12 blue">
-            <h1> OUR SEAMEDIA AND INFO </h1>
-        </div>    
-    </div>
-    <div class="row">
-        
-        <!-- Youtube logo -->
-        
-        <div class= "col-lg-2 social">
-            <a ref="https://www.youtube.com/channel/UCx27Pkk8plpiosF14qXq-VA/videos" target="_blank"><img src="social/youtube2.jpg" class="social"></a>
         </div>
-        
-        <!-- Instagram logo -->
-        
-        <div class= "col-lg-2 social">
-            <a href="https://www.instagram.com/spongebob/?hl=en" target="_blank"><img src="social/instagram2.jpg" class="social"></a>
+        <div class="row blue">
+            <div class="col-lg-12 blue">
+                <h1> OUR SEAMEDIA AND INFO </h1>
+            </div>    
         </div>
-        
-        <!-- Twitter logo -->
-        
-        <div class= "col-lg-2 social">
-            <a href="https://twitter.com/krustykrabscrew?lang=en" target="_blank"><img src="social/twitter2.jpg"class="social"></a>
-        </div>
-        
-        <!-- Facebook logo -->
-        
-        <div class= "col-lg-2 social">
-            <a href="https://www.facebook.com/sarahjane.seddon" target="_blank"><img src="social/facebook2.jpg"></a>
-        </div>
-        
-        <!-- Google link to phone -->
-        
-        <div class= "col-lg-2 social">
-            <a href="https://www.google.com/search?q=krusty+krab+phone+number&source=lmns&bih=777&biw=740&rlz=1C5CHFA_enNZ890NZ890&hl=en-GB&ved=2ahUKEwjM0aXx0_TpAhXFACsKHeo1BIYQ_AUoAHoECAEQAA" target="_blank"><img src="social/phone.jpg"></a>
-         </div>
-        
-        <!-- Mail link -->
-        
-        <div class= "col-lg-2 social">
-            <a href="http://www.nick.com.au/contact-us/" target="_blank"><img src="social/mail.jpg"></a>
-        </div>
+        <div class="row">
+
+            <!-- Youtube logo -->
+
+            <div class= "col-lg-2 social">
+                <a ref="https://www.youtube.com/channel/UCx27Pkk8plpiosF14qXq-VA/videos" target="_blank"><img src="social/youtube2.jpg" class="social"></a>
+            </div>
+
+            <!-- Instagram logo -->
+
+            <div class= "col-lg-2 social">
+                <a href="https://www.instagram.com/spongebob/?hl=en" target="_blank"><img src="social/instagram2.jpg" class="social"></a>
+            </div>
+
+            <!-- Twitter logo -->
+
+            <div class= "col-lg-2 social">
+                <a href="https://twitter.com/krustykrabscrew?lang=en" target="_blank"><img src="social/twitter2.jpg"class="social"></a>
+            </div>
+
+            <!-- Facebook logo -->
+
+            <div class= "col-lg-2 social">
+                <a href="https://www.facebook.com/sarahjane.seddon" target="_blank"><img src="social/facebook2.jpg"></a>
+            </div>
+
+            <!-- Google link to phone -->
+
+            <div class= "col-lg-2 social">
+                <a href="https://www.google.com/search?q=krusty+krab+phone+number&source=lmns&bih=777&biw=740&rlz=1C5CHFA_enNZ890NZ890&hl=en-GB&ved=2ahUKEwjM0aXx0_TpAhXFACsKHeo1BIYQ_AUoAHoECAEQAA" target="_blank"><img src="social/phone.jpg"></a>
+             </div>
+
+            <!-- Mail link -->
+
+            <div class= "col-lg-2 social">
+                <a href="http://www.nick.com.au/contact-us/" target="_blank"><img src="social/mail.jpg"></a>
+            </div>
         </div> 
     </div>
+    <footer>
+        <!-- Icons from font awesome -->
+        <div class="row">
+            <div class="col-lg-6 container">
+                <i class="fa fa-globe" aria-hidden="true"></i> http://www.nick.com.au/spongebob-squarepants/
+                <br>
+                <i class="fa fa-phone" aria-hidden="true"></i>(715) 820-3420
+                <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> nickelodeon.feedback@nickaus.com.au 
+            </div>
+            
+            <div class="col-lg-6 container">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Conch Street, Bikini Bottom
+                <br>
+                <i class="fa fa-book" aria-hidden="true"></i> <a href="contact.html">Book here</a>
+                <br>
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>Open hours 8am-11pm
+            </div>
+        </div>
+    </footer>
 </body>
 </htmL>

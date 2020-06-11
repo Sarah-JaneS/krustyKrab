@@ -5,13 +5,25 @@
 <head>
     <meta charset="utf-8">
     <title>The Krusty Krab</title>
+    
+    <!--Style sheet to connect to main page -->
     <link rel="stylesheet" href="styles.css"/> 
+    
     <!-- Added a favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="/1591166131.ico">
-
+    
+    <!-- add the following 4 lines for Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
 </head>
     
 <body>
+    <!-- Navigation -->
     <div class="header">
         <div class="nav">
             <div class="col-lg-12 logo">
@@ -20,68 +32,91 @@
         </div>
         <div class= "navbar">
             <div class="links">
-                <a href="index.html">|HOME |</a> &bull;
+                <a href="index.html">|HOME|</a> &bull;
                 <a href="about.html">|ABOUT|</a> &bull;
+                <a> |MENU|</a>  &bull;
                 <a href="order.html">|ORDER|</a> &bull;
                 <a href="merch.html">|MERCH|</a> &bull;
-                 <a href="game.html">|PLAY|</a> &bull;               <a href="contact.html">|CONTACT|</a> 
+                <a href="game.html">|PLAY|</a> &bull;               
+                <a href="contact.html">|CONTACT|</a> 
             </div>
         </div>
     </div>
     <div class="blue">
-        <h2> KRUSTY KRABBY PATTIES</h2>
+        <h1> KRUSTY KRABBY PATTIES</h1>
     </div>
-    <!-- Grid row -->
-       <!--USED CODE FROM WORKSHOP -->
-        <div id="gallery">
-            <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!--USED CODE FROM WORKSHOP -->
+    <div id="gallery">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
          
          
-            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
-            </script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
+        </script>
          
          
-            <a data-fancybox="gallery" href="imglarge/krabbypatty.jpg"><img src="imgthumbs/krabbypatty.jpg"></a>
+        <!-- Images -->
+        <a data-fancybox="gallery" href="imglarge/krabbypatty.jpg"><img src="imgthumbs/krabbypatty.jpg"></a>
          
-            <a data-fancybox="gallery" href="imglarge/prettypatty.jpg"><img src="imgthumbs/prettypatty.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/prettypatty.jpg"><img src="imgthumbs/prettypatty.jpg"></a>
          
-             <a data-fancybox="gallery" href="imglarge/jellypatty.jpg"><img src="imgthumbs/jellypatty.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/jellypatty.jpg"><img src="imgthumbs/jellypatty.jpg"></a>
          
-            <a data-fancybox="gallery" href="imglarge/doubledeluxpatty.jpg"><img src="imgthumbs/doubledeluxpatty.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/doubledeluxpatty.jpg"><img src="imgthumbs/doubledeluxpatty.jpg"></a>
          
-            <a data-fancybox="gallery" href="imglarge/pipsqueakpatty.jpg"><img src="imgthumbs/pipsqueakpatty.jpg"></a> 
+        <a data-fancybox="gallery" href="imglarge/pipsqueakpatty.jpg"><img src="imgthumbs/pipsqueakpatty.jpg"></a> 
          
-            <a data-fancybox="gallery" href="imglarge/trippledeluxpatty.jpg"><img src="imgthumbs/trippledeluxpatty.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/trippledeluxpatty.jpg"><img src="imgthumbs/trippledeluxpatty.jpg"></a>
          
-             <a data-fancybox="gallery" href="imglarge/ultrakingpatty.jpg"><img src="imgthumbs/ultrakingpatty.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/ultrakingpatty.jpg"><img src="imgthumbs/ultrakingpatty.jpg"></a>
          
-            <a data-fancybox="gallery" href="imglarge/cryingpatty.jpg"><img src="imgthumbs/cryingpatty.jpg"></a>
-        </div> 
+    `   <a data-fancybox="gallery" href="imglarge/cryingpatty.jpg"><img            src="imgthumbs/cryingpatty.jpg"></a>
+    </div> 
+    
     <div class="blue">
-        <h2> SEA SIDES </h2>
+        <h1> SEA SIDES </h1>
     </div>
-        <div id="gallery">
-            <a data-fancybox="gallery" href="imglarge/coralbits.jpg"><img src="imgthumbs/coralbits.jpg"></a>
+    
+    <div id="gallery">
+        <a data-fancybox="gallery" href="imglarge/coralbits.jpg"><img src="imgthumbs/coralbits.jpg"></a>
          
-            <a data-fancybox="gallery" href="imglarge/hashbrowns.jpg"><img src="imgthumbs/hashbrowns.jpg"></a> 
+        <a data-fancybox="gallery" href="imglarge/hashbrowns.jpg"><img src="imgthumbs/hashbrowns.jpg"></a> 
          
-            <a data-fancybox="gallery" href="imglarge/kelpfries.jpg"><img src="imgthumbs/kelpfries.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/kelpfries.jpg"><img src="imgthumbs/kelpfries.jpg"></a>
          
-             <a data-fancybox="gallery" href="imglarge/salad.jpg"><img src="imgthumbs/salad.jpg"></a>
-        </div>
+        <a data-fancybox="gallery" href="imglarge/salad.jpg"><img src="imgthumbs/salad.jpg"></a>
+    </div>
         
-        <div class="blue">
-            <h2> DIVING DRINKS </h2>
-        </div>
-        <div id="gallery">
-            <a data-fancybox="gallery" href="imglarge/dietblood.jpg"><img src="imgthumbs/dietblood.jpg"></a>
+    <div class="blue">
+        <h1> DIVING DRINKS </h1>
+    </div>
+    <div id="gallery">
+        <a data-fancybox="gallery" href="imglarge/dietblood.jpg"><img src="imgthumbs/dietblood.jpg"></a>
          
-            <a data-fancybox="gallery" href="imglarge/powershake.jpg"><img src="imgthumbs/powershake.jpg"></a> 
+        <a data-fancybox="gallery" href="imglarge/powershake.jpg"><img src="imgthumbs/powershake.jpg"></a> 
          
-            <a data-fancybox="gallery" href="imglarge/kelpshake.jpg"><img src="imgthumbs/kelpshake.jpg"></a>
+        <a data-fancybox="gallery" href="imglarge/kelpshake.jpg"><img src="imgthumbs/kelpshake.jpg"></a>
 
+     </div>
+    <footer>
+    <!-- Icons from font awesome -->
+        <div class="row">
+            <div class="col-lg-6 container">
+                <i class="fa fa-globe" aria-hidden="true"></i> http://www.nick.com.au/spongebob-squarepants/
+                <br>
+                <i class="fa fa-phone" aria-hidden="true"></i>(715) 820-3420
+                <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> nickelodeon.feedback@nickaus.com.au 
+            </div>
+            <div class="col-lg-6 container">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Conch Street, Bikini Bottom
+                <br>
+                <i class="fa fa-book" aria-hidden="true"></i> <a href="contact.html">Book here</a>
+                <br>
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>Open hours 8am-11pm
+            </div>
         </div>
+    </footer>
 </body>
 </htmL>

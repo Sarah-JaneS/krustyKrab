@@ -26,9 +26,6 @@ body {
 }
 
 
-.navbar a:hover{
-    text-decoration:underline ;
-}
 
 
 .logo img {
@@ -39,11 +36,13 @@ body {
 .links {
     margin-top: 5px;
     font-size: 1.7rem;
+
     text-align: center;
     margin: auto;
-    color: #4B4E61;
+    color: ;
     font-family: 'Gochi Hand', cursive;
 }
+
 
 .links a {
     color:  maroon; 
@@ -51,7 +50,6 @@ body {
     padding-right: 10px; 
     text-decoration: none;
 }
-
 
 
 
@@ -250,5 +248,46 @@ input[type=submit]:hover {
     font-size: 1.2rem;
 }
     
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 50%;
+    padding: 0px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+/** FOOTER **/
+footer{
+    max-width: 100%;
+    background-color: #b7e2f7;
+}
+
+
+
 
 
