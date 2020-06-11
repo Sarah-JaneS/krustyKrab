@@ -34,7 +34,7 @@ body {
 
 .links {
     margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     margin: auto;
     font-family: 'Gochi Hand', cursive;
@@ -67,7 +67,7 @@ body {
 
 .blue {
     background-color: #b7e2f7 ;
-    font-size: 1.3em;
+    font-size: 1.0rem;
     opacity: 70%;
     font-family: 'Gochi Hand', cursive;
     text-align: center;
@@ -110,12 +110,11 @@ body {
     max-width: 100%;
     opacity:70%;
     text-align: center;
-    font-size: 1.2rem
+    font-size: 1.0rem
 }
 
 .container p {
-    margin-right: 500px;
-    margin-left: 500px
+    margin: auto;
 }
 
 .text{
@@ -137,8 +136,9 @@ body {
     text-align: center;
 }
 
- /*sm devices */ 
-@media (min-width: 400px) {
+/*XS*/
+@media (min-width: 0px) {
+    .logo img{ max-width: 250px;}
     .info {max-width: 200px;}
     .info {max-height: 200px;}
     .infoimg {max-width: 150px;}
@@ -148,6 +148,23 @@ body {
     .container {max-height: 100%;}
     .container p {margin-right: 10px;}
     .container p {margin-left: 10px;}
+    #controls, #controls2, #controls3, #controls4, #controls5, #controls6, #reset{ max-width: 250px;}
+}
+
+
+ /*sm devices */ 
+@media (min-width: 400px) {
+    .logo img{ max-width: 400px;}
+    .info {max-width: 200px;}
+    .info {max-height: 200px;}
+    .infoimg {max-width: 150px;}
+    .infoimg {max-width: 150px;}
+    .crew  {max-width: 150px;}
+    .crew  {max-height:  150px;}
+    .container {max-height: 100%;}
+    .container p {margin-right: 10px;}
+    .container p {margin-left: 10px;}
+
 }
 
  
