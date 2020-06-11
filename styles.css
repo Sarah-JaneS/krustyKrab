@@ -1,3 +1,4 @@
+/** FONT **/
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 body {
@@ -6,7 +7,7 @@ body {
     max-width:100%;
 }
 
-
+/** Navigation **/
 .nav{
     max-width: 100%;
     height: 100px;
@@ -18,28 +19,24 @@ body {
 
 .navbar{
     max-width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     background-color: #b7e2f7;
     opacity: 70%;
-    align-content: center;
+    text-align: center;
     margin: auto;
 }
 
-
-
-
+/**Logo, made in photoshop - Spongeyboy font **/
 .logo img {
-    max-width: 500px;
+    max-width: 490px;
     margin: auto;
 }
 
 .links {
     margin-top: 5px;
-    font-size: 1.7rem;
-
+    font-size: 1.5rem;
     text-align: center;
     margin: auto;
-    color: ;
     font-family: 'Gochi Hand', cursive;
 }
 
@@ -53,24 +50,20 @@ body {
 
 
 
-/*Bootstrap */
+/** Bootstrap **/
 .info {
-    max-height:200px;
+    max-height: 200px;
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
-    
-
 }
 
-.infoimg{
-    max-height: 200px;
-    max-width: 200px;
+.infoimg {
+    max-height: 170px;
+    max-width: 170px;
     margin: auto;
     text-align: center;
 }
-
-
 
 .blue {
     background-color: #b7e2f7 ;
@@ -81,6 +74,8 @@ body {
     color: maroon; 
 }
 
+
+/** Our crew **/
 .crew img {
     max-width: 600px;
     margin: auto;
@@ -91,6 +86,16 @@ body {
     text-align: center;
 }
 
+.address {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 4.0rem;
+    text-decoration: underline;
+    font-family: 'Gochi Hand', cursive;
+    color: maroon;
+}
+ 
+
 .map {
     background-image: url(img/bikinimap.jpg);
     height: 500px;
@@ -99,14 +104,6 @@ body {
     background-position: center;
 }
 
-.adress {
-    text-align: center;
-    margin-top: 200px;
-    font-size: 4.0rem;
-    font-family: 'Gochi Hand', cursive;
-    color: maroon;
-}
- 
 .container {
     background-color: #b7e2f7 ;
     height: 100%;
@@ -116,14 +113,10 @@ body {
     font-size: 1.2rem
 }
 
-
-
 .container p {
     margin-right: 500px;
     margin-left: 500px
 }
-
-
 
 .text{
     text-align: center;
@@ -131,36 +124,39 @@ body {
 }
 
 .social img{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 170px;
+    max-height: 170px;
     margin: auto;
+    text-align: center;
 }
 
 .social{
     max-width: 200px;
     max-height: 200px;
-    margin:auto;
+    margin: auto;
+    text-align: center;
 }
 
  /*sm devices */ 
 @media (min-width: 400px) {
     .info {max-width: 200px;}
     .info {max-height: 200px;}
-    .infoimg {max-width: 200px;}
-    .infoimg {max-width: 200px;}
+    .infoimg {max-width: 150px;}
+    .infoimg {max-width: 150px;}
     .crew  {max-width: 150px;}
     .crew  {max-height:  150px;}
     .container {max-height: 100%;}
     .container p {margin-right: 10px;}
     .container p {margin-left: 10px;}
-    .socail
 }
 
  
 /* md devices */
 @media (min-width: 992px) {
-    .info {max-width:300px;}
-    .info {max-height: 300px;}
+    .info {max-width: 200px}
+    .info {max-height: 200px}
+    .infoimg {max-width: 200px;}
+    .infoimg {max-height: 200px;}    
     .crew {max-width: 300px;}
     .crew  {max-height: 300px;}
     .container {max-height: 100%;}
@@ -170,18 +166,15 @@ body {
             
 /* lg device */
 @media (min-width: 1200px) {
-    .info {max-width: 300px}
-    .info {max-height: inherit}
-    .infoimg {max-width: 300px;}
-    .infoimg {max-height: 300px;}
+    .info {max-width: 350px}
+    .info {max-height: 350px}
+    .infoimg {max-width: 260px;}
+    .infoimg {max-height: 260px;}
     .crew {max-width: 400px; }
     .crew {max-height: 400px;}
     .container {max-height: 100%;}
     .container p {margin-right: 500px;}
     .container p {margin-left: 500px;}
-    .social{max-height: 400px;}
-    .social{ max-width: 400px;}
-
 }
 
 /* xl device */
@@ -189,15 +182,15 @@ body {
  @media (min-width: 1500px){
      .info {max-width: 300px;}
      .info {max-width: 300px;}
-    .infoimg {max-width: 270px;}
+     .infoimg {max-width: 270px;}
      .infoimg {max-width: 270px;}
      .crew {max-width: 550px; }
      .crew {max-height: 550px;}
      .container {max-height: 100%;}
      .container p {margin-right: 400px;}
      .container p {margin-left: 400px;}
-     .social{max-height: 400px;}
-     .social{ max-width: 400px;}
+     .social img {max-height: 400px;}
+     .social img{ max-width: 400px;}
  }
 
 /** GALLERY **/
@@ -211,6 +204,8 @@ body {
     text-align: center;
 }
 
+
+/** Used Template from W3 Schools **/
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=date], input[type=time],input[type=tel],input[type=email],select, textarea {
@@ -242,43 +237,39 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 5px;
-    font-size: 1.2rem;
+    margin: auto;
+    padding: 20px;
+    
 }
     
-
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 50%;
     padding: 0px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+    text-align: center;
+    font-family: arial;
 }
 
 .price {
-  color: grey;
-  font-size: 18px;
+    color: grey;
+    font-size: 18px;
 }
 
 .card button {
-  border: none;
-  outline: 0;
-  padding: 5px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+    border: none;
+    outline: 0;
+    padding: 5px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
 
 .card button:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
 
 
 /** FOOTER **/
