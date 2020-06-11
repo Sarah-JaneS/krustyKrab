@@ -115,8 +115,10 @@ body {
     max-width: 100%;
     opacity:70%;
     text-align: center;
-    font-size: 1.5rem
+    font-size: 1.2rem
 }
+
+
 
 .container p {
     margin-right: 500px;
@@ -129,6 +131,19 @@ body {
     text-align: center;
     margin: auto;
 }
+
+.social img{
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+
+.social{
+    max-width: 200px;
+    max-height: 200px;
+    margin:auto;
+}
+
  /*sm devices */ 
 @media (min-width: 400px) {
     .info {max-width: 200px;}
@@ -140,6 +155,7 @@ body {
     .container {max-height: 100%;}
     .container p {margin-right: 10px;}
     .container p {margin-left: 10px;}
+    .socail
 }
 
  
@@ -165,6 +181,8 @@ body {
     .container {max-height: 100%;}
     .container p {margin-right: 500px;}
     .container p {margin-left: 500px;}
+    .social{max-height: 400px;}
+    .social{ max-width: 400px;}
 
 }
 
@@ -180,10 +198,11 @@ body {
      .container {max-height: 100%;}
      .container p {margin-right: 400px;}
      .container p {margin-left: 400px;}
-     
+     .social{max-height: 400px;}
+     .social{ max-width: 400px;}
  }
 
-
+/** GALLERY **/
 #gallery img{
     max-width: 190px;
     padding-top: 10px;
@@ -195,8 +214,41 @@ body {
 }
 
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=date], input[type=time],input[type=tel],input[type=email],select, textarea {
+    width: 90%; /* Full width */
+    height: 20px;
+    margin: auto;
+    padding: 10px; /* Some padding */ 
+    border: 2px solid #ccc; /* Gray border */
+    border-radius: 10px; /* Rounded borders  */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    resize: vertical;/* Allow the user to vertically resize the textarea (not horizontally) */
+    font-size: 1.2rem;
+}
 
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
 
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    font-size: 1.2rem;
+}
     
 
 
